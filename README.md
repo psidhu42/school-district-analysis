@@ -68,7 +68,9 @@ Looking at the DataFrame for Scores by Grade, you can see removing the 9th grade
 
 ### Scores by School Spending, Size, and Type
 
-The scores by school spending, size, and type did not change at all, as shown in the following images of the DataFrames
+The scores by school spending, size, and type did not change at all, as shown in the following images of the DataFrames.
+
+#### Spending
 
 * With All Scores:
 
@@ -78,4 +80,26 @@ The scores by school spending, size, and type did not change at all, as shown in
 
 ![Scores by Spending Without THS 9th Graders](https://github.com/psidhu42/school-district-analysis/blob/main/resources/scores_by_spending_altered.PNG)
 
+#### Size
+
+* With All Scores:
+
+![Scores by Size](https://github.com/psidhu42/school-district-analysis/blob/main/resources/scores_by_size.PNG)
+
+* Without 9th Grader Scores from THS:
+
+![Scores by Size Without THS 9th Graders](https://github.com/psidhu42/school-district-analysis/blob/main/resources/scores_by_size_altered.PNG)
+
+#### Type
+
+* With All Scores:
+
+![Scores by Type](https://github.com/psidhu42/school-district-analysis/blob/main/resources/scores_by_type.PNG)
+
+* Without 9th Grader Scores from THS:
+
+![Scores by Type Without THS 9th Graders](https://github.com/psidhu42/school-district-analysis/blob/main/resources/scores_by_type_altered.PNG)
+
 ## Summary
+
+Overall there isn't a huge change to the School District Summary after replacing the THS 9th grader scores with "nan". However four changes, though small, did show up. The "Average Math Score" of the district fell by 0.1. The "% Passing Math" in the distric went down by 0.2%. The "% Passing Reading" dropped by 0.3%. Lastly, for the whole district, the "% Overall Passing" dropped by 0.1%. It should be noted that the "Total Student" count did not change in the "Distric Summary", because only the scores of the 9th grader students at THS were removed not the count of students themselves.
