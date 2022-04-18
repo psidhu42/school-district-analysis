@@ -7,7 +7,7 @@ Analyzing scores from a school district and comparing them based on school budge
 
 ### Purpose
 
-Scores for 9th graders at Thomas High School (THS) appear to have been altered, remove the scores from the data set using the Pandas 'loc' method through Jupyter Notebook, and determine how this changes the overall analysis of the school district.
+Scores for 9th graders at Thomas High School (THS) appear to have been altered, remove the scores from the data set using the Pandas `loc` method through Jupyter Notebook, and determine how this changes the overall analysis of the school district.
 
 ## Results of Analysis
 
@@ -54,27 +54,28 @@ The school summary only changed for Thomas High School as it was the only school
 
 ![School Summary Without THS 9th Grader Scores](https://github.com/psidhu42/school-district-analysis/blob/main/resources/school_summary_altered.PNG)
 
-### Scores by Grade and by School Spending, Size, and Type
+### Scores by Grade
 
-Looking at the DataFrame for Scores by Grade, yiu can see removing the 9th grader scores from THS only changed those cell to "nan".
+Looking at the DataFrame for Scores by Grade, you can see removing the 9th grader scores from THS only changed those cells to "nan" on both math and reading scores.
+
+* Math Scores by Grade
 
 ![Math Scores by Grade](https://github.com/psidhu42/school-district-analysis/blob/main/resources/math_scores_by_grade.PNG)![Math Scores Without THS 9th Graders](https://github.com/psidhu42/school-district-analysis/blob/main/resources/math_scores_by_grade_altered.PNG)
 
-## Election-Audit Summary
+* Reading Scores by Grade
 
-This script can be reused to determine outcomes of other elections if using a `.csv` file that has the results in it. One step needed would be to change the path at `file_to_load = ` by providing the correct directory and file name for the new file. Another modification needed might be referencing the correct index if the data is in a different order in the new `.csv` file. 
+![Reading Scores by Grade](https://github.com/psidhu42/school-district-analysis/blob/main/resources/reading_scores_by_grade.PNG)![Reading Scores Without THS 9th Graders](https://github.com/psidhu42/school-district-analysis/blob/main/resources/reading_scores_by_grade_altered.PNG)
 
-The data in the `.csv` file used in this analysis is as follows (Ballot ID,County,Candidate) with the index being (0,1,2). The new file for example could be (Ballot ID,Candidate,County) then at the following location in the code, the index would need to be changed for candidate_name and county_name next to `row[]`.
-```
-# For each row in the CSV file.
-    for row in reader:
+### Scores by School Spending, Size, and Type
 
-        # Add to the total vote count
-        total_votes += 1
+The scores by school spending, size, and type did not change at all, as shown in the following images of the DataFrames
 
-        # Get the candidate name from each row.
-        candidate_name = row[2]
+* With All Scores:
 
-        # 3: Extract the county name from each row.
-        county_name = row[1]
-```
+![Scores by Spending](https://github.com/psidhu42/school-district-analysis/blob/main/resources/scores_by_spending.PNG)
+
+* Without 9th Grader Scores from THS:
+
+![Scores by Spending Without THS 9th Graders](https://github.com/psidhu42/school-district-analysis/blob/main/resources/scores_by_spending_altered.PNG)
+
+## Summary
