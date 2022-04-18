@@ -24,16 +24,41 @@ The following compares the outcome of the analysis with and without the scores o
     - % Passing Reading: Dropped by 0.3%
     - % Overall Passing: Dropped by 0.1%
 
-With All Scores
+* With All Scores:
 
 ![District Summary](https://github.com/psidhu42/school-district-analysis/blob/main/resources/district_summary.PNG)
 
-Without 9th Grader Scores from THS
+* Without 9th Grader Scores from THS:
 
 ![District Summary Without THS 9th Grader Scores](https://github.com/psidhu42/school-district-analysis/blob/main/resources/district_summary_altered.PNG)
 
-### School Summary Changes
+### School Summary
 
+The school summary only changed for Thomas High School as it was the only school that had the 9th grader scores removed.
+
+* Thomas High School Summary Changes
+    - Total Students: No Change
+    - Total Budget: No Change
+    - Per Student Budget: No Change
+    - Average Math Score: Dropped from 83.41 to 83.35
+    - Average Reading Score: Increased from 83.84 to 83.89
+    - % Passing Math: Dropped by 0.1%
+    - % Passing Reading: Dropped by 0.3%
+    - % Overall Passing: Dropped by 0.3%
+
+* With All Scores:
+
+![School Summary](https://github.com/psidhu42/school-district-analysis/blob/main/resources/school_summary.PNG)
+
+* Without 9th Grader Scores from THS:
+
+![School Summary Without THS 9th Grader Scores](https://github.com/psidhu42/school-district-analysis/blob/main/resources/school_summary_altered.PNG)
+
+### Scores by Grade and by School Spending, Size, and Type
+
+Looking at the DataFrame for Scores by Grade, yiu can see removing the 9th grader scores from THS only changed those cell to "nan".
+
+![Math Scores by Grade](https://github.com/psidhu42/school-district-analysis/blob/main/resources/math_scores_by_grade.PNG)![Math Scores Without THS 9th Graders](https://github.com/psidhu42/school-district-analysis/blob/main/resources/math_scores_by_grade_altered.PNG)
 
 ## Election-Audit Summary
 
